@@ -3,13 +3,21 @@ h1 {
 }
 
 body {
+    /* dark green */
+    /* background-color: rgb(23, 207, 139) ;  */
+    /* dark grey */
+    /* background-color: rgb(88, 84, 84) ; */
+    /* mid grey */
     /* background-color: rgb(119, 115, 115) ; */
-    background-color: rgb(90, 218, 144) ;
+    /* dark green */
+    background-color: rgb(90, 218, 144) ; 
     color: white;
     /* text-align: right; */
     font-size: 26px;
-    margin-right: 175px;
-    margin-left: 175px;
+    /* margin-right: 175px; */
+    /* margin-left: 175px; */
+    width: 700px;
+    margin: auto;
  }
 
  /* Add a black background color to the top navigation */
