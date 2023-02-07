@@ -1,0 +1,5 @@
+# ignore htlatex example
+htlatex
+
+# ignore vscode object
+*.code-workspace
