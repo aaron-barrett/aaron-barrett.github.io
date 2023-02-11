@@ -15,6 +15,13 @@
 
     <!-- To automatically render math in text elements, include the auto-render extension: -->
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+       $(function() {
+          $("#includeHtml").load("htlatex_try/frag.html");
+       });
+    </script>
     <!-- <script>
       $(document).ready(function () { // this need jquery
         renderMathInElement(document.body, {
@@ -54,6 +61,7 @@
             This is some inline math \(\sum_{i=1}^{\infty} \frac{1}{i}\) other text \(math italics\).
           </p>
         </div>
+        <div id="includeHtml"></div>
         <!-- <link href="htlatex_try/frag.html" rel="import" /> -->
         <!-- <embed type="text/html" src="htlatex_try/frag.html"> -->
         <!-- <p><strong>§2.11.</strong> For <span class="math inline">\(A \in \mathcal{A}\)</span>, show <span class="math inline">\(P(A) = 1 - P(A^c)\)</span>.</p>
