@@ -2,11 +2,10 @@ from yattag import Doc
 from yattag import indent
 
 doc, tag, text, line = Doc().ttl()
-
 doc.asis('<!DOCTYPE html>')
-
 with tag('html', lang="en"):
     with tag('head'):
+        doc.stag('meta', charset="UTF-8")
         doc.stag('link', rel="stylesheet", href="styles.css")
         with tag("title"):
             text("Math")
