@@ -1,4 +1,5 @@
 from yattag import Doc
+from yattag import indent
 
 doc, tag, text, line = Doc().ttl()
 doc.asis('<!DOCTYPE html>')
@@ -28,5 +29,5 @@ with tag('html', lang="en"):
                 math_tex.close()
 
 f = open("math_subpage.html",'w')
-print(doc.getvalue(), file=f)
+print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())
