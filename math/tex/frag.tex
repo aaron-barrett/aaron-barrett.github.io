@@ -1,0 +1,28 @@
+\input{header_hw.tex}
+
+\begin{document}
+
+\tbox{2.11}{ 
+    For $A \in \mathcal{A}$, show $P(A) = 1 - P(A^c)$.
+}
+Note that by construction that for $A \subset \Omega$ that $A \bigcup A^c= \Omega$, and by additivity of a probability measure we know that $P(A\bigcup A^c)=P(A)+P(A^c)$ since $A \bigcap A^c= \emptyset$. 
+But $P(A\bigcap A^c) = P(\Omega) = 1$, and thus $1 = P(A) + P(A^c)$, meaning that $P(A^c) = 1 - P(A)$.
+
+\tbox{2.12}{
+For $A,B \in \mathcal{A}$, show $P(A \cap B^c) = P(A)-P(A \cap B)$.
+}
+First note that
+$$
+    A = A \bigcap \Omega =A\bigcap (B\bigcup B^c)=(A\bigcap B) \bigcup (A\bigcap B^c).
+$$ 
+Now, note that $(A\bigcap B^c) \bigcap (A\bigcap B) = \emptyset$. 
+Then by additivity of probability measure $P$ we have that 
+$$
+P(A)=P((A\bigcap B) \bigcup (A \bigcap B^c))=P(A \bigcap B) + P( A\bigcap B^c)
+$$
+and thus 
+$$
+P(A \bigcap B^c) = P(A)-P(A \bigcap B).
+$$
+
+\end{document}
