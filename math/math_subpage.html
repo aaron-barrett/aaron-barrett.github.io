@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Math</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  </head>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="math.html">Math</a>
+    <a href="about.html">About</a>
+  </div>
+  <body>
+    <main>
+      <div id="prob_hw">
+        <div class="tcolorbox">
+          <p><strong>§2.11.</strong> For <span class="math inline">\(A \in
+\mathcal{A}\)</span>, show <span class="math inline">\(P(A) = 1 -
+P(A^c)\)</span>.</p>
+        </div>
+        <p>Note that by construction that for <span class="math inline">\(A
+\subset \Omega\)</span> that <span class="math inline">\(A \bigcup A^c=
+\Omega\)</span>, and by additivity of a probability measure we know that
+<span class="math inline">\(P(A\bigcup A^c)=P(A)+P(A^c)\)</span> since
+<span class="math inline">\(A \bigcap A^c= \emptyset\)</span>. But <span
+class="math inline">\(P(A\bigcap A^c) = P(\Omega) = 1\)</span>, and thus
+<span class="math inline">\(1 = P(A) + P(A^c)\)</span>, meaning that
+<span class="math inline">\(P(A^c) = 1 - P(A)\)</span>.</p>
+        <div class="tcolorbox">
+          <p><strong>§2.12.</strong> For <span class="math inline">\(A,B \in
+\mathcal{A}\)</span>, show <span class="math inline">\(P(A \cap B^c) =
+P(A)-P(A \cap B)\)</span>.</p>
+        </div>
+        <p>First note that <span class="math display">\[A = A \bigcap \Omega
+=A\bigcap (B\bigcup B^c)=(A\bigcap B) \bigcup (A\bigcap B^c).\]</span>
+Now, note that <span class="math inline">\((A\bigcap B^c) \bigcap
+(A\bigcap B) = \emptyset\)</span>. Then by additivity of probability
+measure <span class="math inline">\(P\)</span> we have that <span
+class="math display">\[P(A)=P((A\bigcap B) \bigcup (A \bigcap B^c))=P(A
+\bigcap B) + P( A\bigcap B^c)\]</span> and thus <span
+class="math display">\[P(A \bigcap B^c) = P(A)-P(A \bigcap
+B).\]</span></p>
+      </div>
+    </main>
+  </body>
+</html>

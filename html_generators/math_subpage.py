@@ -1,5 +1,15 @@
 from yattag import Doc
 from yattag import indent
+import os
+import sys 
+import runpy
+
+if (len(sys.argv) == 2):
+    arg = sys.argv[1]
+    if (arg == "all"):
+        runpy.run_path(os.path.join("..", "math", "generate_math_subpages_html.py"))
+
+
 
 doc, tag, text, line = Doc().ttl()
 doc.asis('<!DOCTYPE html>')
@@ -23,7 +33,7 @@ with tag('html', lang="en"):
     with tag('body'):
         with tag('main'):
             with tag('div', id = "prob_hw"):
-                math_tex = open("../math/html/frag.html", "r")
+                math_tex = open(os.path.join("..","math", "html", "frag.html"),"r")
                 math_text_raw = math_tex.read()
                 doc.asis(math_text_raw)
                 math_tex.close()
