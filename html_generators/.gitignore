@@ -1,0 +1,2 @@
+# ignore the working html pages generated from python
+*.html
