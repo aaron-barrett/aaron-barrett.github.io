@@ -3,7 +3,9 @@ h1 {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(237, 237, 237);
+    color: #000000;
+    border-style: double;
     /* background-color: rgb(90, 218, 144) ;  */
 }
 
@@ -14,8 +16,10 @@ body {
     /* background-color: rgb(88, 84, 84) ; */
     /* mid grey */
     /* background-color: rgb(119, 115, 115) ; */
-    /* dark green */
+    /* dark green - old main*/
     background-color: rgb(90, 218, 144) ; 
+    /* light grey blue */
+    /* background-color: rgb(172, 193, 232) ;  */
     color: white;
     /* text-align: right; */
     font-size: 20px;
@@ -36,7 +40,8 @@ body {
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    /* went with dark green background */
+    color: #f2f2f2; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
