@@ -3,7 +3,7 @@ h1 {
 }
 
 main {
-    /* background-color: white; */
+    background-color: white;
     /* background-color: rgb(90, 218, 144) ;  */
 }
 
@@ -18,7 +18,7 @@ body {
     background-color: rgb(90, 218, 144) ; 
     color: white;
     /* text-align: right; */
-    font-size: 26px;
+    font-size: 20px;
     /* font-family: monospace; */
     font-family: sans-serif;
     /* margin-right: 175px; */
