@@ -26,7 +26,7 @@ with tag('html', lang="en"):
             with tag('h1'):
                 text("Welcome to Math!")
             with tag('div', id = "main_page"):
-                text("This is main text for the math page.")
+                text("Below are expositions of topics I found interesting enough to generate.")
             with tag('ul'):
                 with tag('li'):
                     with tag('a', href = "math_subpage.html"):
