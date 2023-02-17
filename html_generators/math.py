@@ -27,8 +27,10 @@ with tag('html', lang="en"):
                 text("Welcome to Math!")
             with tag('div', id = "main_page"):
                 text("This is main text for the math page.")
-            with tag('a', href = "math_subpage.html"):
-                text("Math Subpage Test")
+            with tag('ul'):
+                with tag('li'):
+                    with tag('a', href = "math_subpage.html"):
+                        text("Math Subpage Test")
 f = open("math.html",'w')
 print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())
