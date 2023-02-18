@@ -15,9 +15,9 @@ body {
     /* dark grey */
     /* background-color: rgb(88, 84, 84) ; */
     /* mid grey */
-    /* background-color: rgb(119, 115, 115) ; */
+    background-color: rgb(119, 115, 115) ;
     /* dark green - old main*/
-    background-color: rgb(90, 218, 144) ; 
+    /* background-color: rgb(90, 218, 144) ;  */
     /* light grey blue */
     /* background-color: rgb(172, 193, 232) ;  */
     color: white;
@@ -30,6 +30,17 @@ body {
     width: 700px;
     margin: auto;
  }
+
+ a:link {
+  color:rgb(85, 208, 217)
+  /* color:rgb(217, 85, 85) */
+  /* color: rgb(51, 61, 242) */
+ }
+
+a:visited{
+  /* color: rgb(20, 30, 232) */
+  color:rgb(217, 85, 85)
+}
 
  /* Add a black background color to the top navigation */
 .topnav {
@@ -56,6 +67,7 @@ body {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
+    background-color: #444444;
     color: white;
   }
