@@ -31,19 +31,19 @@ body {
     margin: auto;
  }
 
- #main_page{
+#main_page{
   border-top: solid;
   border-top-color: white;
   padding-top: 25px;
 }
 
 a:link {
-color:rgb(85, 208, 217)
-/* color:rgb(217, 85, 85) */
-/* color: rgb(51, 61, 242) */
+  color:rgb(85, 208, 217)
+  /* color:rgb(217, 85, 85) */
+  /* color: rgb(51, 61, 242) */
 }
 
-a:visited{
+a:visited {
   /* color: rgb(20, 30, 232) */
   color:rgb(217, 85, 85)
 }
