@@ -19,7 +19,7 @@ with tag('html', lang="en"):
             with tag('h1'):
                 text("Welcome to About!")
             with tag('div', id = "main_page"):
-                text("Hi. I am Aaron Barrett, like the website suggests. I recently obtained my Master's of Mathematics from the University of Kansas in May 2022, and I was a music performance major for one of my undergraduate degrees along with mathematics. The goal of this website is a small, potentially unwanted platform to share fun math results, and the focus will be on computational mathematics and numerical linear algebra. Other concepts may creep in such as music theory or programming paradigms, but they also may not. This is not a blog, however, and never will be. Enjoy!")
+                text("Hi. I am Aaron, like the website suggests. I recently obtained my Master's of Mathematics from the University of Kansas in May 2022, and I was a music performance major for one of my undergraduate degrees along with mathematics. The goal of this website is a small, potentially unwanted platform to share fun math results, and the focus will be on computational mathematics and numerical linear algebra. Other concepts may creep in such as music theory or programming paradigms, but they also may not. This is not a blog, however, and never will be. Enjoy!")
 f = open("about.html",'w')
 print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())

@@ -29,7 +29,7 @@ with tag('html', lang="en"):
                 text("Below are expositions of topics I found interesting enough to generate.")
             with tag('ul'):
                 with tag('li'):
-                    with tag('a', href = "math_subpage.html"):
+                    with tag('a', href = "math\html\math_subpage.html"):
                         text("Math Subpage Test")
 f = open("math.html",'w')
 print(indent(doc.getvalue()), file=f)

@@ -7,9 +7,14 @@ import runpy
 if (len(sys.argv) == 2):
     arg = sys.argv[1]
     if (arg == "all"):
-        runpy.run_path(os.path.join("..", "math", "generate_math_subpages_html.py"))
+        if (os.path.basename(os.getcwd()) != "math"):
+            while (os.path.basename(os.getcwd()) != "aaron-barrett.github.io"):
+                os.chdir("../")
+            os.chdir("math")
+        runpy.run_path("generate_math_subpages_html.py")
 
-
+while (os.path.basename(os.getcwd()) != "aaron-barrett.github.io"):
+    os.chdir("../")
 
 doc, tag, text, line = Doc().ttl()
 doc.asis('<!DOCTYPE html>')
@@ -36,11 +41,11 @@ with tag('html', lang="en"):
         with tag('main'):
             text("Here are two simple probability problems for the sake of adjusting the, padding, text size, etc.")
             with tag('div', id = "prob_hw"):
-                math_tex = open(os.path.join("..","math", "html", "frag.html"),"r")
+                math_tex = open(os.path.join("math", "pandoc_html", "frag.html"),"r")
                 math_text_raw = math_tex.read()
                 doc.asis(math_text_raw)
                 math_tex.close()
 
-f = open("math_subpage.html",'w')
+f = open(os.path.join("math", "html", "math_subpage.html"),'w')
 print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())
