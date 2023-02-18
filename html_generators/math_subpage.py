@@ -31,11 +31,11 @@ with tag('html', lang="en"):
         with tag("script", "async", src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", type="text/javascript", id="MathJax-script"):
             text("")
     with tag('div', klass = "topnav"):
-        with tag('a', href="index.html"):
+        with tag('a', href="../../index.html"):
             text("Home")
-        with tag('a', klass="active", href="math.html"):
+        with tag('a', klass="active", href="../../math.html"):
             text("Math")
-        with tag('a', href="about.html"):
+        with tag('a', href="../../about.html"):
             text("About")
     with tag('body'):
         with tag('main'):
