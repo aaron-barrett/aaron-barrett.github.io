@@ -39,8 +39,10 @@ with tag('html', lang="en"):
             text("About")
     with tag('body'):
         with tag('main'):
-            text("Here are two simple probability problems for the sake of adjusting the, padding, text size, etc.")
-            with tag('div', id = "prob_hw"):
+            with tag ("h1"):
+                text("Two Problem Header")
+            with tag('div', id = "main_page"):
+                text("Here are two simple probability problems for the sake of adjusting the, padding, text size, etc.")
                 math_tex = open(os.path.join("math", "pandoc_html", "frag.html"),"r")
                 math_text_raw = math_tex.read()
                 doc.asis(math_text_raw)
