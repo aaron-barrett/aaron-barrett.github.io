@@ -14,7 +14,8 @@ body {
     /* background-color: rgb(23, 207, 139) ;  */
     /* dark grey */
     /* background-color: rgb(88, 84, 84) ; */
-    background-color: rgb(78, 78, 82) ;
+    /* dark blue grey main */
+    background-color: rgb(78, 78, 82) ; 
     /* mid grey */
     /* background-color: rgb(119, 115, 115) ; */
     /* dark green - old main*/
@@ -75,7 +76,7 @@ a:visited {
 /* Add a color to the active/current link */
 .topnav a.active {
   /* background-color: #04AA6D; */
-  background-color: #444444;
+  background-color: #2d2d2d;
   color: white;
 }
 
