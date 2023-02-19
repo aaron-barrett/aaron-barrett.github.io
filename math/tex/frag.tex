@@ -60,8 +60,8 @@
 \tbox{2.11}{ 
     For $A \in \mathcal{A}$, show $P(A) = 1 - P(A^c)$.
 }
-Note that by construction that for $A \subset \Omega$ that $A \cup A^c= \Omega$, and by additivity of a probability measure we know that $P(A\cup A^c)=P(A)+P(A^c)$ since $A \cap A^c= \emptyset$. 
-But $P(A\cup A^c) = P(\Omega) = 1$, and thus $1 = P(A) + P(A^c)$, meaning that $P(A^c) = 1 - P(A)$.
+By additivity of a probability measure we know that $P(A\cup A^c)=P(A)+P(A^c)$ since $A \cap A^c= \emptyset$. 
+Since $P(A\cup A^c) = P(\Omega) = 1$, then $1 = P(A) + P(A^c)$, hence $P(A^c) = 1 - P(A)$.
 
 \tbox{2.12}{
 For $A,B \in \mathcal{A}$, show $P(A \cap B^c) = P(A)-P(A \cap B)$.
@@ -70,14 +70,13 @@ First note that
 $$
     A = A \cap \Omega =A\cap (B\cup B^c)=(A\cap B) \cup (A\cap B^c).
 $$ 
-Now, note that $(A\cap B^c) \cap (A\cap B) = \emptyset$. 
-Then by additivity of probability measure $P$ we have that 
+Note that $(A\cap B^c) \cap (A\cap B) = \emptyset$, so  by additivity of probability measure $P$ we have that 
 $$
-P(A)=P((A\cap B) \cup (A \cap B^c))=P(A \cap B) + P( A\cap B^c)
+    P(A)=P((A\cap B) \cup (A \cap B^c))=P(A \cap B) + P( A\cap B^c).
 $$
-and thus 
+Thus,  
 $$
-P(A \cap B^c) = P(A)-P(A \cap B).
+    P(A \cap B^c) = P(A)-P(A \cap B).
 $$
 
 \end{document}
