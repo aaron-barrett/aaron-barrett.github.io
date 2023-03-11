@@ -24,6 +24,8 @@ with tag('html', lang="en"):
                 text("Below are expositions.")
             with tag('ul'):
                 with tag('li'):
+                    # TODO: Possibly iterate this process for when there are many subpages
+                    # That might be here, that might be in the main run.py
                     with tag('a', href = "math\html\math_subpage_test.html"):
                         text("Two HW Questions")
 f = open("math.html",'w')
