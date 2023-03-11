@@ -48,6 +48,6 @@ with tag('html', lang="en"):
                 doc.asis(math_text_raw)
                 math_tex.close()
 
-f = open(os.path.join("math", "html", "math_subpage.html"),'w')
+f = open(os.path.join("math", "html", "math_subpage_test.html"),'w')
 print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())

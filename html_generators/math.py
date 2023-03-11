@@ -24,8 +24,8 @@ with tag('html', lang="en"):
                 text("Below are expositions.")
             with tag('ul'):
                 with tag('li'):
-                    with tag('a', href = "math\html\math_subpage.html"):
-                        text("Math Subpage Test")
+                    with tag('a', href = "math\html\math_subpage_test.html"):
+                        text("Two HW Questions")
 f = open("math.html",'w')
 print(indent(doc.getvalue()), file=f)
 # print(doc.getvalue())
