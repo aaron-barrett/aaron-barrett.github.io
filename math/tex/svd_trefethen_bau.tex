@@ -21,12 +21,8 @@
 \usepackage{hyperref}           %might need to take this out for import?
 
 \begin{comment}
-% bibliography 
 \usepackage{cite}
-%useful packages for long documents
 \usepackage{hyperref}%links contents in table of contents 
-\usepackage{multicol}% allows for multicolumns in text environment 
-%useful packages for images
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{rotating}%rotates boxed 
@@ -44,27 +40,10 @@
 \DeclareMathOperator{\real}{Re}
 
 \begin{document}
-
-\tbox{2.11}{ 
-    For $A \in \mathcal{A}$, show $P(A) = 1 - P(A^c)$.
-}
-By additivity of a probability measure we know that $P(A\cup A^c)=P(A)+P(A^c)$ since $A \cap A^c= \emptyset$. 
-Since $P(A\cup A^c) = P(\Omega) = 1$, then $1 = P(A) + P(A^c)$, hence $P(A^c) = 1 - P(A)$.
-
-\tbox{2.12}{
-For $A,B \in \mathcal{A}$, show $P(A \cap B^c) = P(A)-P(A \cap B)$.
-}
-First note that
-$$
-    A = A \cap \Omega =A\cap (B\cup B^c)=(A\cap B) \cup (A\cap B^c).
-$$ 
-Note that $(A\cap B^c) \cap (A\cap B) = \emptyset$, so  by additivity of probability measure $P$ we have that 
-$$
-    P(A)=P((A\cap B) \cup (A \cap B^c))=P(A \cap B) + P( A\cap B^c).
-$$
-Thus,  
-$$
-    P(A \cap B^c) = P(A)-P(A \cap B).
-$$
+The singular value decomposition (SVD) is fundamental to Numerical Linear Algebra as a step in many applications, such as Principal Component Analysis, and in theoretical linear algebra since its easy to manipulate with unitary invariant norms. 
+There are one if not several constructive ways to prove its existence, but here I want to revisit a non-constructive proof method that is found in Trefethen and Bau.
+I don't see this method used in other texts, namely Golub Van Loan and BLANK, but there's some standard tricks here that I think warrant a closer look.
+% Additionally, this was my first introduction to numerical linear algebra, and I've always found this volume compelling in how manageable the lessons were with respect to how much material is presented. 
+Below is my annotated proof which I hope clarifies a step or two that is not quite as clear to a modern reader. 
 
 \end{document}
